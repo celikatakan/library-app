@@ -12,7 +12,7 @@ Track Stock: Monitor the availability of each book in your library.
 
 🚀 Live Demo
 
-- [Netlify](libraryapproject.netlify.app) (Hosting)
+- [Netlify](https://libraryapproject.netlify.app/) (Hosting)
 
 ![Image](https://github.com/user-attachments/assets/7ed50089-34bd-45eb-9e14-036b4d439fa7)
 
