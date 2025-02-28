@@ -1,0 +1,257 @@
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Dikey olarak ortalar */
+    height: 100vh; /* Sayfanın yüksekliği kadar yer kaplar */
+    padding-top: 0; /* 800px yerine sıfır verdik çünkü `justify-content: center;` kullanılıyor */
+  }
+  
+  
+  body {
+    background-color: wheat !important;
+  }
+  
+  form {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #dba722;
+    border-radius: 8px;
+    background-color: #fff9e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  }
+  
+  form input,
+  form textarea,
+  form button {
+    width: 95%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #dda91c;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .spinner {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    border-color: #dba722;
+    box-shadow: 0 0 4px #dba722;
+  }
+  
+  form button {
+    background-color: #dba722;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #dda91c;
+    transform: scale(1.05);
+  }
+  
+  .book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-height: 500px;
+    padding: 10px;
+  }
+  
+  .book-card {
+    border: 1px solid #dda91c;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+  }
+  
+  .book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .book-card-header {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-bottom: 1px solid #dda91c;
+    text-align: center;
+  }
+  
+  .book-card-header h3 {
+    color: #dba722;
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .book-card-header p {
+    color: #555;
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+  }
+  
+  .book-card-body {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .book-card-body p {
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .book-card-footer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    border-top: 1px solid #dda91c;
+    background-color: #f7f7f7;
+  }
+  
+  .book-edit-button {
+    background-color: rgb(64, 175, 64);
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .book-delete-button {
+    background-color: rgb(199, 56, 56);
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Mesaj stilini ekleyelim */
+  .message {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .error {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .select-container {
+    margin-bottom: 15px;
+  }
+  
+  .select-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .select-container select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #dda91c; /* Sarı border */
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: auto; /* Ensure the select box height adjusts to content */
+  }
+  
+  .select-container select:focus {
+    border-color: #dba722;
+    box-shadow: 0 0 4px #dba722;
+  }
+  
+  .book-add-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .modal-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .modal-buttons button:first-child {
+    background-color: red;
+    color: white;
+  }
+  
+  .modal-buttons button:last-child {
+    background-color: #ccc;
+  }
+  
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  h2 {
+    margin-top: 20px; /* Add margin to move the text down */
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  

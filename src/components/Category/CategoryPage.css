@@ -1,0 +1,158 @@
+/* Genel Sayfa Stilleri */
+.category-page {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 70px;
+  background-color: wheat;
+  border-radius: 10px;
+}
+
+body.category-body {
+  background-color: #f4f4f4;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  margin: 0;
+  /* padding-top: 200px; */
+}
+
+.category-page__title {
+  text-align: center;
+  color: #dda91c; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.category-page__description {
+  text-align: center;
+  color: #312f2f;
+  margin-bottom: 20px;
+}
+
+/* Form Stilleri */
+.category-page__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  margin: 0 auto 30px;
+}
+
+.category-page__input,
+.category-page__textarea {
+  padding: 10px;
+  border: 1px solid #e3b02b; 
+  border-radius: 5px;
+}
+
+.category-page__textarea {
+  resize: none;
+  height: 80px;
+}
+
+.category-page__button {
+  padding: 10px 15px;
+  background-color: #e3b02b; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-page__button:hover {
+  background-color: #dda91c; 
+}
+
+/* Bildirim Mesajı */
+.category-page__message {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+/* Kategoriler Listesi */
+.category-page__list-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.category-page__empty {
+  text-align: center;
+  color: #999;
+}
+
+/* Kart Listesi */
+.category-page__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+/* Kart Stilleri */
+.category-page__list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px;
+  padding: 15px;
+  border: 1px solid #dda91c; 
+  border-radius: 10px;
+  background-color: #fff8e1; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-page__list-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.category-page__list-item-name {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.category-page__list-item-buttons {
+  display: flex;
+  gap: 10px; 
+}
+
+.category-page__button-delete {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-page__button-delete:hover {
+  background-color: #e53935;
+}
+
+.category-page__button-edit {
+  background-color: #1b995a;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-page__button-edit:hover {
+  background-color: #1ee539;
+}
+
+.category-page__list-title{
+  text-align: center;
+  color: #dba722;
+  font-size: 1.5rem;
+}

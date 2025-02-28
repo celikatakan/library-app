@@ -1,0 +1,227 @@
+/* Genel container için stil */
+.borrow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Başlık ve içerik daha rahat sıralanabilsin */
+    margin-top: 20px;
+    padding-top: 30px; 
+    height: 100vh; 
+}
+
+/* Başlık stili */
+.brrow-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #dba722;
+    margin-bottom: 30px; 
+    text-align: center;
+    text-transform: uppercase; 
+    letter-spacing: 2px; /* Başlık harf aralığını açma */
+}
+
+h2 {
+    color: #dba722;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Kitap kartları için liste stili */
+.borrow-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 30px;
+    max-height: 500px;
+}
+
+/* Kart stili */
+.borrow-card {
+    border: 1px solid #dda91c;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: all 0.3s ease;
+    background-color: #fff8e1;
+}
+
+.borrow-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Kart başlık stili */
+.borrow-card h4 {
+    color: #dba722;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: capitalize; /* Kitap adı baş harfleri büyük */
+}
+
+/* Kart içeriği stili */
+.borrow-card p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Form stili */
+.borrow-form {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px; 
+    padding: 20px;
+    border: 2px solid #dba722;
+    border-radius: 10px;
+    background-color: #fff9e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Form elemanlarının ortak stilizasyonu */
+.borrow-form input,
+.borrow-form textarea,
+.borrow-form button {
+    width: 95%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #dda91c;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+/* Focus durumundaki form elemanları */
+.borrow-form input:focus,
+.borrow-form textarea:focus {
+    border-color: #dba722;
+    box-shadow: 0 0 4px #dba722;
+}
+
+/* Buton stili */
+.borrow-form button {
+    background-color: #dba722;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 12px;
+}
+
+/* Buton hover efekti */
+.borrow-form button:hover {
+    background-color: #dda91c;
+    transform: scale(1.05);
+}
+
+/* Güncelle butonu stili */
+.update-button {
+    background-color: #28a745; 
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 10px; 
+}
+
+.update-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Sil butonu stili */
+.delete-button {
+    background-color: #dc3545; 
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 10px; 
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+/* Mesaj stilini ekleyelim */
+.message {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Kartların daha düzenli görünmesi için responsive ayarları */
+@media (max-width: 768px) {
+    .borrow-list {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .borrow-card {
+        width: 80%; 
+    }
+
+    .borrow-form {
+        max-width: 90%;
+    }
+}
+.borrow-p{
+    text-align: center;
+}
+
+
+/* Genel message container stili */
+.message {
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  /* Başarı mesajı stili */
+  .success {
+    background-color: #28a745; 
+    color: #fff;
+    border: 2px solid #218838; 
+  }
+  
+  /* Hata mesajı stili */
+  .error {
+    background-color: #dc3545; 
+    color: #fff;
+    border: 2px solid #c82333; 
+  }
+  
+  /* Mesaj hover efekti */
+  .message:hover {
+    opacity: 0.9;
+  }
+  
